@@ -4,35 +4,66 @@
     <style type="text/css">
         body {
             background-color: rgb(10, 10, 10);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
         }
-        h1{
+        h1 {
             text-align: center;
-        }
-        p{
-            text-align: center;
+            color: white;
         }
         section {
-            text-align: center;
+            max-width: 1100px;
+            margin: 0 auto;
         }
-        .link-with-image {
-            display: inline-flex;
+        .category {
+            margin: 40px 0;
+        }
+        .item {
+            display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 12px;
-            margin: 10px 0;
+            gap: 24px;
+            margin: 20px 0;
+            padding: 10px 0;
         }
-        .link-with-image img {
-            width: 80px;
-            height: 80px;
+        .media-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            width: 220px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .media-link img {
+            width: 200px;
+            height: 260px;
             object-fit: cover;
-            border-radius: 8px;
+            border-radius: 12px;
             border: 2px solid white;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+        }
+        .item-copy {
+            flex: 1;
+            text-align: left;
+        }
+        .item-copy h2 {
+            margin: 0 0 8px;
+            font-size: 1.3rem;
+            color: white;
+        }
+        .item-copy p {
+            margin: 0;
+            text-align: left;
+            line-height: 1.6;
+            color: white;
         }
         a {
-            display: inline-block;
             color: white;
-            text-align: center;
-            margin: 0;
         }
         </style>
     <h1 style = "color : white;">My Favorite Things</h1>
@@ -45,82 +76,153 @@
 <body>
 
 <section>
-    <a class="link-with-image" href="https://www.youtube.com/watch?v=zSWdZVtXT7E&themeRefresh=1">
-        <img src="https://www.slamedia.org/wp-content/uploads/2014/11/interstellar-feat.jpeg" alt="Interstellar Movie Poster">
-        <span>Interstellar Trailer</span>
-    </a><br><br><br>
+    <div class="category">
+        <h1>Favorite Movies</h1>
 
-    <a class="link-with-image" href="https://www.youtube.com/watch?v=-tnxzJ0SSOw">
-        <img src="https://m.media-amazon.com/images/M/MV5BMjMyOTM4MDMxNV5BMl5BanBnXkFtZTcwNjIyNzExOA@@._V1_FMjpg_UX1000_.jpg" alt="Spider-Man Movie Poster">
-        <span>Spider-Man Trailer</span>
-    </a><br><br><br>
+        <div class="item">
+            <a class="media-link" href="https://www.youtube.com/watch?v=zSWdZVtXT7E&themeRefresh=1">
+                <img src="https://www.slamedia.org/wp-content/uploads/2014/11/interstellar-feat.jpeg" alt="Interstellar Movie Poster">
+                <span>Interstellar Trailer</span>
+            </a>
+            <div class="item-copy">
+                <h2>Interstellar (2014)</h2>
+                <p>This is an incredible cinematography masterpiece.</p>
+            </div>
+        </div>
 
-    <a class="link-with-image" href="https://www.youtube.com/watch?v=tmeOjFno6Do">
-        <img src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/e9b8aaf1-d1d1-4e6c-9fe9-6d524b47914f/compose?aspectRatio=1.78&format=webp&width=1200" alt="Avengers: Age of Ultron Movie Poster">
-        <span>Avengers: Age of Ultron Trailer</span>
-    </a><br><br><br>
+        <div class="item">
+            <a class="media-link" href="https://www.youtube.com/watch?v=-tnxzJ0SSOw">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjMyOTM4MDMxNV5BMl5BanBnXkFtZTcwNjIyNzExOA@@._V1_FMjpg_UX1000_.jpg" alt="Spider-Man Movie Poster">
+                <span>Spider-Man Trailer</span>
+            </a>
+            <div class="item-copy">
+                <h2>The Amazing Spider-Man (2012)</h2>
+                <p>A great superhero film with excellent action sequences.</p>
+            </div>
+        </div>
 
-    <h1 style = "color : white;">Favorite Movies</h1>
-    <p style = "color : white;">1. Interstellar: This is an incredible cinematography masterpiece.</p>
-    <p style = "color : white;">2. The Amazing Spider-Man: A great superhero film with excellent action sequences.</p>
-    <p style = "color : white;">3. Avengers: Age of Ultron: A thrilling continuation of the Marvel Cinematic Universe.</p>
+        <div class="item">
+            <a class="media-link" href="https://www.youtube.com/watch?v=tmeOjFno6Do">
+                <img src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/e9b8aaf1-d1d1-4e6c-9fe9-6d524b47914f/compose?aspectRatio=1.78&format=webp&width=1200" alt="Avengers: Age of Ultron Movie Poster">
+                <span>Avengers: Age of Ultron Trailer</span>
+            </a>
+            <div class="item-copy">
+                <h2>Avengers: Age of Ultron (2015)</h2>
+                <p>A thrilling continuation of the Marvel Cinematic Universe.</p>
+            </div>
+        </div>
+    </div>
 
-    <h1 style = "color : white;">Favorite Music Artists</h1>
-    <a class="link-with-image" href="https://www.linkinpark.com/">
-        <img src="https://i.scdn.co/image/ab67616d00001e026e996745f2c7b8036abef213" alt="Linkin Park Image">
-        <span>Linkin Park Page</span>
-    </a><br><br><br>
+    <div class="category">
+        <h1>Favorite Music Artists</h1>
 
-    <a class="link-with-image" href="https://www.tameimpala.com/">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Tame_Impala_-_Currents.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Tame Impala Image">
-        <span>Tame Impala Page</span>
-    </a><br><br><br>
+        <div class="item">
+            <a class="media-link" href="https://www.linkinpark.com/">
+                <img src="https://i.scdn.co/image/ab67616d00001e026e996745f2c7b8036abef213" alt="Linkin Park Image">
+                <span>Linkin Park Page</span>
+            </a>
+            <div class="item-copy">
+                <h2>Linkin Park</h2>
+                <p>Known for their unique sound and emotional depth.</p>
+            </div>
+        </div>
 
-    <a class="link-with-image" href="https://www.nirvana.com/">
-        <img src="https://cdn.europosters.eu/image/1300/139461.jpg" alt="Nirvana Image">
-        <span>Nirvana Page</span>
-    </a><br><br><br>
-    <p style = "color : white;">1. Linkin Park: Known for their unique sound and emotional depth.</p>
-    <p style = "color : white;">2. Tame Impala: A psychedelic rock band with mesmerizing melodies.</p>
-    <p style = "color : white;">3. Nirvana: A pioneering grunge band that defined a generation.</p>
+        <div class="item">
+            <a class="media-link" href="https://www.tameimpala.com/">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Tame_Impala_-_Currents.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Tame Impala Image">
+                <span>Tame Impala Page</span>
+            </a>
+            <div class="item-copy">
+                <h2>Tame Impala</h2>
+                <p>A psychedelic rock band with mesmerizing melodies.</p>
+            </div>
+        </div>
 
-    <h1 style = "color : white;">Favorite Video Games</h1>
-    <a class="link-with-image" href="https://www.playstation.com/en-us/games/spider-man/">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpfMkWec7ss8F6Od9uE7bHh3fw3iA9_Y9UySPb0i9-AVOnSFjElVl2nX1W&s=10" alt="Spider-Man Game Poster">
-        <span>Spider-Man Game Page</span>
-    </a><br><br><br>
+        <div class="item">
+            <a class="media-link" href="https://www.nirvana.com/">
+                <img src="https://cdn.europosters.eu/image/1300/139461.jpg" alt="Nirvana Image">
+                <span>Nirvana Page</span>
+            </a>
+            <div class="item-copy">
+                <h2>Nirvana</h2>
+                <p>A pioneering grunge band that defined a generation.</p>
+            </div>
+        </div>
+    </div>
 
-    <a class="link-with-image" href="https://www.nintendo.com/games/detail/super-mario-galaxy-switch/">
-        <img src="https://upload.wikimedia.org/wikipedia/en/7/76/SuperMarioGalaxy.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Super Mario Galaxy Game Poster">
-        <span>Super Mario Galaxy Game Page</span>
-    </a><br><br><br>
+    <div class="category">
+        <h1>Favorite Video Games</h1>
 
-    <a class="link-with-image" href="https://www.thinkwithportals.com/">
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Portal_standalonebox.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Portal Game Poster">
-        <span>Portal Game Page</span>
-    </a><br><br><br>
-    <p style = "color : white;">1. Insomniac Spider-Man series: An exciting action-adventure game based on my favorite superhero.</p>
-    <p style = "color : white;">2. Super Mario Galaxy: An innovative platformer with stunning visuals and engaging gameplay.</p>
-    <p style = "color : white;">3. Portal: A mind-bending puzzle game with an awesome portal gun.</p>
+        <div class="item">
+            <a class="media-link" href="https://www.playstation.com/en-us/games/spider-man/">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpfMkWec7ss8F6Od9uE7bHh3fw3iA9_Y9UySPb0i9-AVOnSFjElVl2nX1W&s=10" alt="Spider-Man Game Poster">
+                <span>Spider-Man Game Page</span>
+            </a>
+            <div class="item-copy">
+                <h2>Insomniac Spider-Man Series (2018)</h2>
+                <p>An exciting action-adventure game based on my favorite superhero.</p>
+            </div>
+        </div>
 
-    <h1 style = "color : white;">Favorite Foods</h1>
-    <a class="link-with-image" href="https://www.allrecipes.com/recipe/23456/buffalo-wings/">
-        <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=800&q=80" alt="Buffalo Wings Recipe">
-        <span>Buffalo Wings Recipe</span>
-    </a><br><br><br>
+        <div class="item">
+            <a class="media-link" href="https://www.nintendo.com/games/detail/super-mario-galaxy-switch/">
+                <img src="https://upload.wikimedia.org/wikipedia/en/7/76/SuperMarioGalaxy.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Super Mario Galaxy Game Poster">
+                <span>Super Mario Galaxy Game Page</span>
+            </a>
+            <div class="item-copy">
+                <h2>Super Mario Galaxy (2007)</h2>
+                <p>An innovative platformer with stunning visuals and engaging gameplay.</p>
+            </div>
+        </div>
 
-    <a class="link-with-image" href="https://www.allrecipes.com/recipe/23457/burritos/">
-        <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=800&q=80" alt="Burritos Recipe">
-        <span>Burritos Recipe</span>
-    </a><br><br><br>
+        <div class="item">
+            <a class="media-link" href="https://www.thinkwithportals.com/">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Portal_standalonebox.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Portal Game Poster">
+                <span>Portal Game Page</span>
+            </a>
+            <div class="item-copy">
+                <h2>Portal (2007)</h2>
+                <p>A mind-bending puzzle game with an awesome portal gun.</p>
+            </div>
+        </div>
+    </div>
 
-    <a class="link-with-image" href="https://www.allrecipes.com/recipe/23458/chicken-pot-pie/">
-        <img src="https://coleycooks.com/wp-content/uploads/2025/05/chicken-pot-pie-5.jpg" alt="Chicken Pot Pie Recipe">
-        <span>Chicken Pot Pie Recipe</span>
-    </a><br><br><br>
-    <p style = "color : white;">1. Buffalo Wings: Bufallo sauce is just so good.</p>
-    <p style = "color : white;">2. Burritos: A delicious and filling meal with a variety of fillings.</p>
-    <p style = "color : white;">3. Chicken Pot Pie: The flaky crust with the gravy is just amazing.</p>
+    <div class="category">
+        <h1>Favorite Foods</h1>
+
+        <div class="item">
+            <a class="media-link" href="https://www.allrecipes.com/recipe/23456/buffalo-wings/">
+                <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=800&q=80" alt="Buffalo Wings Recipe">
+                <span>Buffalo Wings Recipe</span>
+            </a>
+            <div class="item-copy">
+                <h2>Buffalo Wings</h2>
+                <p>Buffalo sauce is just so good.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <a class="media-link" href="https://www.allrecipes.com/recipe/23457/burritos/">
+                <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=800&q=80" alt="Burritos Recipe">
+                <span>Burritos Recipe</span>
+            </a>
+            <div class="item-copy">
+                <h2>Burritos</h2>
+                <p>A delicious and filling meal with a variety of fillings.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <a class="media-link" href="https://www.allrecipes.com/recipe/23458/chicken-pot-pie/">
+                <img src="https://coleycooks.com/wp-content/uploads/2025/05/chicken-pot-pie-5.jpg" alt="Chicken Pot Pie Recipe">
+                <span>Chicken Pot Pie Recipe</span>
+            </a>
+            <div class="item-copy">
+                <h2>Chicken Pot Pie</h2>
+                <p>The flaky crust with the gravy is just amazing.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 </body>
